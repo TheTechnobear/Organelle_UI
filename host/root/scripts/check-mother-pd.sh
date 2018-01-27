@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # USER_DIR=${USER_DIR:="/usbdrive"}
 # PATCH_DIR=${PATCH_DIR:="/usbdrive/Patches"}
@@ -19,7 +19,7 @@ then
     exit 0
 fi
     echo mother.pd not required version, require "$2" got "$VER"
-exit -1
+exit 1
 
 
 

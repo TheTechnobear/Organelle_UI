@@ -1,11 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
 # USER_DIR=${USER_DIR:="/usbdrive"}
 # PATCH_DIR=${PATCH_DIR:="/usbdrive/Patches"}
 # FW_DIR=${FW_DIR:="/root"}
 # SCRIPTS_DIR=$FW_DIR/scripts
 
-if xprop -root &> /dev/null; then
+xprop -root 2>&1 > /dev/null
+if [ $? -eq 0 ] ; then
     echo "X server found..."
     exit 1
 else

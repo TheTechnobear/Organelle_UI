@@ -1,20 +1,20 @@
 audioapi: 1
 noaudioin: False
-audioindev1: 0 2
-audioindevname1: On-board Codec (hardware)
+audioindev1: 3 2
+audioindevname1: sgtl5000-audio (plug-in)
 noaudioout: False
-audiooutdev1: 0 2
-audiooutdevname1: On-board Codec (hardware)
+audiooutdev1: 3 2
+audiooutdevname1: sgtl5000-audio (plug-in)
 audiobuf: 4
 rate: 44100
 callback: 0
 blocksize: 64
 nomidiin: False
 midiindev1: 0
-midiindevname1: /dev/midi3
+midiindevname1: ALSA MIDI device #1
 nomidiout: False
 midioutdev1: 0
-midioutdevname1: /dev/midi3
+midioutdevname1: ALSA MIDI device #1
 path1: /root/externals
 npath: 1
 standardpath: 1
@@ -22,3 +22,4 @@ verbose: 0
 nloadlib: 0
 defeatrt: 0
 flags: -alsamidi
+zoom: 1

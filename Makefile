@@ -39,6 +39,8 @@ deploy : main
 	cp -f host/root/mother.pd /root
 	cp -f host/root/mother.scd /root
 	cp -f host/root/mother /root
+	mkdir -p /root/scripts
+	mkdir -p /root/externals
 	cp -f host/root/scripts/* /root/scripts
 	cp -f host/root/externals/* /root/externals
 	cp -f host/root/version /root
@@ -49,7 +51,8 @@ deploy : main
 	mkdir -p /root/.ssh
 	cp -f host/root/.ssh/environment /root/.ssh/environment
 	cp -f host/etc/ssh/sshd_config /etc/ssh/sshd_config
-	cp -f host/etc/udev/rules.d/70-wifi-powersave.rules /etc/udev/rules.d/70-wifi-powersave.rules
+	#cp -f host/etc/udev/rules.d/70-wifi-powersave.rules /etc/udev/rules.d/70-wifi-powersave.rules
+	cp -f host/etc/asound.conf /etc
 	cp -f host/lib/systemd/system/cherrypy.service /lib/systemd/system/cherrypy.service
 	mkdir -p /root/web
 	cp -fr host/root/web/* /root/web
