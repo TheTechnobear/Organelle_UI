@@ -50,6 +50,7 @@ deploy : main
 	cp -f host/root/.pdsettings /root
 	mkdir -p /root/.ssh
 	cp -f host/root/.ssh/environment /root/.ssh/environment
+	cp -Rf host/root/Desktop /root
 	cp -f host/etc/ssh/sshd_config /etc/ssh/sshd_config
 	#cp -f host/etc/udev/rules.d/70-wifi-powersave.rules /etc/udev/rules.d/70-wifi-powersave.rules
 	cp -f host/etc/asound.conf /etc
