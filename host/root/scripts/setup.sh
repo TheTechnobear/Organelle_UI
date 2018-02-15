@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 systemctl stop serial-getty@ttymxc0.service
 dmesg -n 1
 amixer set PCM 192-
